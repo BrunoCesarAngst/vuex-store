@@ -1,0 +1,51 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "product": "bicicleta"
+    },
+    {
+      "id": "2",
+      "product": "carro"
+    },
+    {
+      "id": "3",
+      "product": "churrasqueira"
+    }
+  ],
+  "cart": [
+    {
+      "product": {
+        "id": 1,
+        "title": "Product 1",
+        "description": "loremipsum loremipsum loremipsum loremipsumloremipsum loremipsum loremipsumloremipsum",
+        "price": 100,
+        "image": "https://cdn.vuetifyjs.com/images/cards/kitchen.png"
+      },
+      "quantity": 1,
+      "id": 2
+    },
+    {
+      "product": {
+        "id": 1,
+        "title": "Product 1",
+        "description": "loremipsum loremipsum loremipsum loremipsumloremipsum loremipsum loremipsumloremipsum",
+        "price": 100,
+        "image": "https://cdn.vuetifyjs.com/images/cards/kitchen.png"
+      },
+      "quantity": 1,
+      "id": 3
+    },
+    {
+      "product": {
+        "id": 1,
+        "title": "Product 1",
+        "description": "loremipsum loremipsum loremipsum loremipsumloremipsum loremipsum loremipsumloremipsum",
+        "price": 100,
+        "image": "https://cdn.vuetifyjs.com/images/cards/kitchen.png"
+      },
+      "quantity": 1,
+      "id": 4
+    }
+  ]
+}
