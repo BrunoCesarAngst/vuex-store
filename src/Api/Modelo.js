@@ -1,11 +1,11 @@
-// import API from './Api'
+import API from './Api'
 
-// const END_POINT = 'cart'
+const END_POINT = 'modelos'
 
-// export default {
-//     all(){
-//         return API.get(END_POINT);
-//     },
+export default {
+    all(){
+        return API.get(END_POINT);
+    },
 
 //     store(data){
 //         return API.post(END_POINT, data);
@@ -18,4 +18,4 @@
 //     deleteAll(){
 //         return API.delete(END_POINT);
 //     }
-// }
+}

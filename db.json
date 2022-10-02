@@ -13,5 +13,21 @@
       "produto": "churrasqueira"
     }
   ],
-  "modelos": []
+  "modelos": [
+    {
+      "id": "1",
+      "modelo": "urbana",
+      "idProduto": "1"
+    },
+    {
+      "id": "2",
+      "modelo": "esporte",
+      "idProduto": "1"
+    },
+    {
+      "id": "3",
+      "modelo": "outro produto",
+      "idProduto": "2"
+    }
+  ]
 }

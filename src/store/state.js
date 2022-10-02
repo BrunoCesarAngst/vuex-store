@@ -1,5 +1,5 @@
 export default {
 produtos: [],
-produto: null,
-// cart: []
+// produto: null,
+modelos: []
 }

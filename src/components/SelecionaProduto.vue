@@ -1,6 +1,6 @@
 <template>
   <v-row align="center">
-    <v-col class="d-flex" cols="12" sm="8">
+    <v-col cols="6" md="4" offset-md="3">
       <v-select
         v-model="selected"
         :items="produtos"
@@ -19,7 +19,7 @@
 import { mapActions, mapState } from 'vuex';
 
 export default {
-  name: "Select",
+  name: "SelecionaProduto",
 
   data() {
     return {};

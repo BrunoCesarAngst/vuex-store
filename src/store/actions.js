@@ -1,5 +1,5 @@
 import Produto from '../Api/Produto';
-import Cart from '../Api/Cart';
+import Modelo from '../Api/Modelo';
 
 // Get All Produto List from API
 export const getProdutos = ({commit}) => {
@@ -19,18 +19,27 @@ export const getProduto = ({commit},produtoId) => {
     });
 }
 
+// Get All modelo List from API
+export const getModelos = ({commit}) => {
+    Modelo.all()
+    // axios.get('http://localhost:3000/modelos')
+    .then(res => {
+        commit('SET_MODELOS', res.data);
+    });
+}
+
 
 // Add Produto to Cart
-export const addProduto = ({commit}, {produto, quantity}) => {
-    // Add Item Cart to state
-    commit('ADD_TO_CART', {produto,quantity});
-    // Add Item Cart to API
-    Cart.store({
-        produto,
-        quantity
-    });
-    // axios.post('http://localhost:3000/cart', {produto,quantity})
-}
+// export const addProduto = ({commit}, {produto, quantity}) => {
+//     // Add Item Cart to state
+//     commit('ADD_TO_CART', {produto,quantity});
+//     // Add Item Cart to API
+//     Cart.store({
+//         produto,
+//         quantity
+//     });
+//     // axios.post('http://localhost:3000/cart', {produto,quantity})
+// }
 
 // // Get produto item to cart from API
 // export const getCartItems = ({commit}) => {

@@ -1,11 +1,16 @@
 // Get All Product from API
 export const SET_PRODUTOS = (state, produtos) => {
-state.produtos = produtos;
+    state.produtos = produtos;
 }
 
 // Get Product ID from API
 export const SET_PRODUTO = (state, produto) => {
     state.produto = produto;
+}
+
+// Get All Modelos from API
+export const SET_MODELOS = (state, modelos) => {
+    state.modelos = modelos;
 }
 
 // // Add Product from state

@@ -1,21 +1,21 @@
 <template>
   <div class="home">
     <v-spacer></v-spacer>
-    <Select />
-    <!-- <ProductList /> -->
+    <SelecionaProduto />
+    <SelecionaModelo />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-// import ProductList from "../components/ProductList.vue";
-import Select from "../components/Select.vue";
+import SelecionaModelo from "../components/SelecionaModelo.vue";
+import SelecionaProduto from "../components/SelecionaProduto.vue";
 
 export default {
   name: "Home",
   components: {
-    // ProductList,
-    Select
+    SelecionaProduto,
+    SelecionaModelo
 },
 };
 </script>
