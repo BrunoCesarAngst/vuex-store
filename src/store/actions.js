@@ -1,38 +1,38 @@
-import Product from '../Api/Product';
+import Produto from '../Api/Produto';
 import Cart from '../Api/Cart';
 
-// Get All Product List from API
-export const getProducts = ({commit}) => {
-    Product.all()
-    // axios.get('http://localhost:3000/products')
+// Get All Produto List from API
+export const getProdutos = ({commit}) => {
+    Produto.all()
+    // axios.get('http://localhost:3000/produtos')
     .then(res => {
-        commit('SET_PRODUCTS', res.data);
+        commit('SET_PRODUTOS', res.data);
     });
 }
 
-// Get Product ID from API
-export const getProduct = ({commit},productId) => {
-    Product.show(productId)
-    // axios.get(`http://localhost:3000/products/${productId}`)
+// Get Produto ID from API
+export const getProduto = ({commit},produtoId) => {
+    Produto.show(produtoId)
+    // axios.get(`http://localhost:3000/produtos/${produtoId}`)
     .then(res => {
-        commit('SET_PRODUCT', res.data);
+        commit('SET_PRODUTO', res.data);
     });
 }
 
 
-// Add Product to Cart
-export const addProduct = ({commit}, {product, quantity}) => {
+// Add Produto to Cart
+export const addProduto = ({commit}, {produto, quantity}) => {
     // Add Item Cart to state
-    commit('ADD_TO_CART', {product,quantity});
+    commit('ADD_TO_CART', {produto,quantity});
     // Add Item Cart to API
     Cart.store({
-        product,
+        produto,
         quantity
     });
-    // axios.post('http://localhost:3000/cart', {product,quantity})
+    // axios.post('http://localhost:3000/cart', {produto,quantity})
 }
 
-// // Get product item to cart from API
+// // Get produto item to cart from API
 // export const getCartItems = ({commit}) => {
 //     Cart.all()
 //     // axios.get('http://localhost:3000/cart')
@@ -41,12 +41,12 @@ export const addProduct = ({commit}, {product, quantity}) => {
 //     });
 // }
 
-// export const removeCart = ({commit}, product) => {
+// export const removeCart = ({commit}, produto) => {
 //     // Delete Item from state
-//     commit('REMOVE_CART', product);
+//     commit('REMOVE_CART', produto);
 //     // Delete Item from API
-//     Cart.delete(product.id);
-//     // axios.delete(`http://localhost:3000/cart/${product.id}`);
+//     Cart.delete(produto.id);
+//     // axios.delete(`http://localhost:3000/cart/${produto.id}`);
 // }
 
 // export const clearCart = ({commit}) => {

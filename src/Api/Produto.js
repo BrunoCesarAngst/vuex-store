@@ -1,6 +1,6 @@
 import API from './Api'
 
-const END_POINT = 'products'
+const END_POINT = 'produtos'
 
 export default {
     all(){

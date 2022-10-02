@@ -1,51 +1,17 @@
 {
-  "products": [
+  "produtos": [
     {
       "id": "1",
-      "product": "bicicleta"
+      "produto": "bicicleta"
     },
     {
       "id": "2",
-      "product": "carro"
+      "produto": "carro"
     },
     {
       "id": "3",
-      "product": "churrasqueira"
+      "produto": "churrasqueira"
     }
   ],
-  "cart": [
-    {
-      "product": {
-        "id": 1,
-        "title": "Product 1",
-        "description": "loremipsum loremipsum loremipsum loremipsumloremipsum loremipsum loremipsumloremipsum",
-        "price": 100,
-        "image": "https://cdn.vuetifyjs.com/images/cards/kitchen.png"
-      },
-      "quantity": 1,
-      "id": 2
-    },
-    {
-      "product": {
-        "id": 1,
-        "title": "Product 1",
-        "description": "loremipsum loremipsum loremipsum loremipsumloremipsum loremipsum loremipsumloremipsum",
-        "price": 100,
-        "image": "https://cdn.vuetifyjs.com/images/cards/kitchen.png"
-      },
-      "quantity": 1,
-      "id": 3
-    },
-    {
-      "product": {
-        "id": 1,
-        "title": "Product 1",
-        "description": "loremipsum loremipsum loremipsum loremipsumloremipsum loremipsum loremipsumloremipsum",
-        "price": 100,
-        "image": "https://cdn.vuetifyjs.com/images/cards/kitchen.png"
-      },
-      "quantity": 1,
-      "id": 4
-    }
-  ]
+  "modelos": []
 }

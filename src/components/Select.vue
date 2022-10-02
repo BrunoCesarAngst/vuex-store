@@ -3,9 +3,9 @@
     <v-col class="d-flex" cols="12" sm="8">
       <v-select
         v-model="selected"
-        :items="products"
-        label="Select"
-        item-text="product"
+        :items="produtos"
+        label="Selecione um produto"
+        item-text="produto"
         item-value="id"
         chips
         deletable-chips
@@ -26,15 +26,15 @@ export default {
   },
 
   computed: {
-    ...mapState(['products']),
+    ...mapState(['produtos']),
   },
 
   mounted() {
-    this.getProducts();
+    this.getProdutos();
   },
 
   methods: {
-    ...mapActions(['getProducts']),
+    ...mapActions(['getProdutos']),
   },
 };
 </script>

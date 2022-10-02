@@ -1,5 +1,5 @@
 export default {
-products: [],
-product: null,
+produtos: [],
+produto: null,
 // cart: []
 }
