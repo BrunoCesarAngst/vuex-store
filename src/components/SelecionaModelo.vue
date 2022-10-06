@@ -21,20 +21,38 @@ import { mapActions, mapState } from 'vuex';
 export default {
   name: "SelecionaModelo",
 
+  // obter o valor selecionado de produtos do componente irmão SelecionaProduto
+
+  props: {
+    selectedProduto: {
+      type: String,
+      default: null
+    }
+  },
+
   data() {
-    return {};
+    return {
+    };
   },
 
   computed: {
     ...mapState(['modelos']),
+    // obter o valor selecionado de produtos do componente irmão SelecionaProduto
+    selectedTheProduto() {
+      return this.$parent.selectedProduto;
+    },
   },
 
   mounted() {
-    this.getModelos();
+    const id = this.selectedTheProduto;
+  
+    this.expandProductsModels(id);
+
   },
 
   methods: {
-    ...mapActions(['getModelos']),
+    ...mapActions(['expandProductsModels']),
+
   },
 };
 </script>

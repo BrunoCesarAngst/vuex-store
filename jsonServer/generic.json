@@ -13,6 +13,14 @@
       "produto": "churrasqueira"
     }
   ],
+  "caracteristicas": [
+    {
+      "id": "1",
+      "caracteristica": "cor",
+      "valor": "azul",
+      "produtoId": "1"
+    }
+  ],
   "modelos": [
     {
       "id": "1",

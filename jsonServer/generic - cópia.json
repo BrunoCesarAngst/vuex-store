@@ -2,7 +2,19 @@
   "produtos": [
     {
       "id": "1",
-      "produto": "bicicleta"
+      "produto": "bicicleta",
+      "caracters": [
+        {
+          "id": "1",
+          "característica": "cor",
+          "valor": "azul"
+        },
+        {
+          "id": "2",
+          "característica": "tamanho",
+          "valor": "15"
+        }
+      ]
     },
     {
       "id": "2",

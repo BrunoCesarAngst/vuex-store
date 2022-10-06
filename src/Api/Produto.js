@@ -8,5 +8,6 @@ export default {
     },
     show(id){
         return API.get(`${END_POINT}/${id}`)
-    }
+    },
+
 }

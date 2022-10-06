@@ -6,6 +6,10 @@ export default {
     all(){
         return API.get(END_POINT);
     },
+    // obter modelos de um produto com base no identificador do produto (produtoId)
+    expandProductsModels(produtoId){
+        return API.get(`${END_POINT}?produtoId=${produtoId}`)
+    },
 
 //     store(data){
 //         return API.post(END_POINT, data);

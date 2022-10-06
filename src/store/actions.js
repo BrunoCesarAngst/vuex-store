@@ -1,7 +1,7 @@
 import Produto from '../Api/Produto';
 import Modelo from '../Api/Modelo';
 
-// Get All Produto List from API
+// Obter toda a lista de Produtos da API
 export const getProdutos = ({commit}) => {
     Produto.all()
     // axios.get('http://localhost:3000/produtos')
@@ -10,7 +10,7 @@ export const getProdutos = ({commit}) => {
     });
 }
 
-// Get Produto ID from API
+// Obter um Produto da API
 export const getProduto = ({commit},produtoId) => {
     Produto.show(produtoId)
     // axios.get(`http://localhost:3000/produtos/${produtoId}`)
@@ -19,7 +19,7 @@ export const getProduto = ({commit},produtoId) => {
     });
 }
 
-// Get All modelo List from API
+// Obter todos os Modelos da API
 export const getModelos = ({commit}) => {
     Modelo.all()
     // axios.get('http://localhost:3000/modelos')
@@ -28,6 +28,13 @@ export const getModelos = ({commit}) => {
     });
 }
 
+// expandir modelos de um produto com base no identificador do produto (produtoId)
+export const expandProductsModels = ({commit}, produtoId) => {
+    Modelo.expandProductsModels(produtoId)
+    .then(res => {
+        commit('SET_MODELOS', res.data);
+    });
+}
 
 // Add Produto to Cart
 // export const addProduto = ({commit}, {produto, quantity}) => {

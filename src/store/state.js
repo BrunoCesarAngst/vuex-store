@@ -1,5 +1,6 @@
 export default {
 produtos: [],
-// produto: null,
-modelos: []
+produto: null,
+modelos: [],
+modelo: null,
 }
