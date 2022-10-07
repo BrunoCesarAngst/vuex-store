@@ -6,36 +6,214 @@
     },
     {
       "id": "2",
-      "produto": "carro"
+      "produto": "churrasqueira"
     },
     {
       "id": "3",
-      "produto": "churrasqueira"
-    }
-  ],
-  "caracteristicas": [
-    {
-      "id": "1",
-      "caracteristica": "cor",
-      "valor": "azul",
-      "produtoId": "1"
+      "produto": "carro"
     }
   ],
   "modelos": [
     {
       "id": "1",
-      "modelo": "urbana",
+      "nome": "aero",
       "produtoId": "1"
     },
     {
       "id": "2",
-      "modelo": "esporte",
+      "nome": "mountain",
       "produtoId": "1"
     },
     {
       "id": "3",
-      "modelo": "um modelo de carro",
+      "nome": "speed",
+      "produtoId": "1"
+    },
+    {
+      "id": "4",
+      "nome": "portátil",
+      "produtoId": "2"
+    },
+    {
+      "id": "5",
+      "nome": "fixa",
+      "produtoId": "2"
+    },
+    {
+      "id": "6",
+      "nome": "com rodas",
+      "produtoId": "2"
+    },
+    {
+      "id": "7",
+      "nome": "uno",
+      "produtoId": "3"
+    },
+    {
+      "id": "8",
+      "nome": "fiesta",
+      "produtoId": "3"
+    },
+    {
+      "id": "9",
+      "nome": "meriva",
+      "produtoId": "3"
+    }
+  ],
+  "quadros": [
+    {
+      "id": "1",
+      "nome": "alumínio",
+      "produtoId": "1"
+    },
+    {
+      "id": "2",
+      "nome": "carbono",
+      "produtoId": "1"
+    },
+    {
+      "id": "3",
+      "nome": "aço",
       "produtoId": "2"
     }
-  ]
+  ],
+  "marcas": [
+    {
+      "id": "1",
+      "nome": "caloi",
+      "produtoId": "1"
+    },
+    {
+      "id": "2",
+      "nome": "monark",
+      "produtoId": "1"
+    },
+    {
+      "id": "3",
+      "nome": "cannondale",
+      "produtoId": "1"
+    },
+    {
+      "id": "4",
+      "nome": "weber",
+      "produtoId": "2"
+    },
+    {
+      "id": "5",
+      "nome": "tramontina",
+      "produtoId": "2"
+    },
+    {
+      "id": "6",
+      "nome": "brastemp",
+      "produtoId": "2"
+    },
+    {
+      "id": "7",
+      "nome": "fiat",
+      "produtoId": "3"
+    },
+    {
+      "id": "8",
+      "nome": "ford",
+      "produtoId": "3"
+    },
+    {
+      "id": "9",
+      "nome": "chevrolet",
+      "produtoId": "3"
+    }
+  ],
+  "aros": [
+    {
+      "id": "1",
+      "nome": "26",
+      "produtoId": "1"
+    },
+    {
+      "id": "2",
+      "nome": "27.5",
+      "produtoId": "1"
+    },
+    {
+      "id": "3",
+      "nome": "29",
+      "produtoId": "1"
+    },
+    {
+      "id": "7",
+      "nome": "14",
+      "produtoId": "3"
+    },
+    {
+      "id": "8",
+      "nome": "15",
+      "produtoId": "3"
+    },
+    {
+      "id": "9",
+      "nome": "16",
+      "produtoId": "3"
+    }
+  ],
+  "transmissao": [
+    {
+      "id": "1",
+      "nome": "shimano",
+      "produtoId": "1"
+    },
+    {
+      "id": "2",
+      "nome": "sram",
+      "produtoId": "1"
+    },
+    {
+      "id": "3",
+      "nome": "campagnolo",
+      "produtoId": "1"
+    },
+    {
+      "id": "7",
+      "nome": "manual",
+      "produtoId": "3"
+    },
+    {
+      "id": "8",
+      "nome": "automática",
+      "produtoId": "3"
+    },
+    {
+      "id": "9",
+      "nome": "semi-automática",
+      "produtoId": "3"
+    }
+  ],
+
+  "numeroMarchas": [
+    {
+      "id": "1",
+      "nome": "21",
+      "produtoId": "1"
+    },
+    {
+      "id": "2",
+      "nome": "24",
+      "produtoId": "1"
+    },
+    {
+      "id": "3",
+      "nome": "27",
+      "produtoId": "1"
+    }
+  ],
+  "adesivo": {
+    "id": "7",
+    "nome": "adesivo",
+    "produtoId": "1",
+    "adesivo": [true, false],
+    "personalização": {
+      "texto": "um texto"
+    },
+    "quantidade": 1
+  }
 }
