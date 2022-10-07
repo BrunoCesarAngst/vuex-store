@@ -1,0 +1,260 @@
+@startjson
+
+{
+'array de produtos com id de string e nome de string.
+'	"produto": 1,
+	"produtos": [
+		{
+			"id": "1",
+			"nome": "bicicleta"
+		},
+		{
+			"id": "2",
+			"nome": "churrasqueira"
+		},
+		{
+			"id": "3",
+			"nome": "carro"
+		}
+	],
+'array de características do produto com id de string e nome de string e relacionados com produtoId dos produtos.
+	"caracteristicas": [
+		{
+			"id": "1",
+			"nome": "marca",
+			"marcas": [
+				{
+					"id": "1",
+					"nome": "caloi",
+					"produtoId": "1"
+				},
+				{
+					"id": "2",
+					"nome": "monark",
+					"produtoId": "1"
+				},
+				{
+					"id": "3",
+					"nome": "cannondale",
+					"produtoId": "1"
+				},
+				' marcas de churrasqueira
+				{
+					"id": "4",
+					"nome": "weber",
+					"produtoId": "2"
+				},
+				{
+					"id": "5",
+					"nome": "tramontina",
+					"produtoId": "2"
+				},
+				{
+					"id": "6",
+					"nome": "brastemp",
+					"produtoId": "2"
+				},
+				' marcas de carro
+				{
+					"id": "7",
+					"nome": "fiat",
+					"produtoId": "3"
+				},
+				{
+					"id": "8",
+					"nome": "ford",
+					"produtoId": "3"
+				},
+				{
+					"id": "9",
+					"nome": "chevrolet",
+					"produtoId": "3"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"nome": "modelo",
+			"modelos": [
+				{
+					"id": "1",
+					"nome": "aero",
+					"produtoId": "1"
+				},
+				{
+					"id": "2",
+					"nome": "mountain",
+					"produtoId": "1"
+				},
+				{
+					"id": "3",
+					"nome": "speed",
+					"produtoId": "1"
+				},
+				' modelos de churrasqueira
+				{
+					"id": "4",
+					"nome": "portátil",
+					"produtoId": "2"
+				},
+				{
+					"id": "5",
+					"nome": "fixa",
+					"produtoId": "2"
+				},
+				{
+					"id": "6",
+					"nome": "com rodas",
+					"produtoId": "2"
+				},
+				' modelos de carro
+				{
+					"id": "7",
+					"nome": "uno",
+					"produtoId": "3"
+				},
+				{
+					"id": "8",
+					"nome": "fiesta",
+					"produtoId": "3"
+				},
+				{
+					"id": "9",
+					"nome": "meriva",
+					"produtoId": "3"
+				}
+			]
+		},
+		{
+			"id": "3",
+			"nome": "aro",
+			"produtoIds": ["1", "3"],
+			"aros": [
+				{
+					"id": "1",
+					"nome": "26",
+					"produtoId": "1"
+				},
+				{
+					"id": "2",
+					"nome": "27.5",
+					"produtoId": "1"
+				},
+				{
+					"id": "3",
+					"nome": "29",
+					"produtoId": "1"
+				},
+				' aros de carro
+				{
+					"id": "7",
+					"nome": "14",
+					"produtoId": "3"
+				},
+				{
+					"id": "8",
+					"nome": "15",
+					"produtoId": "3"
+				},
+				{
+					"id": "9",
+					"nome": "16",
+					"produtoId": "3"
+				}
+			]
+		},
+		{
+			"id": "4",
+			"nome": "transmissão",
+			"produtoIds": ["1", "3"],
+			"transmissões": [
+				{
+					"id": "1",
+					"nome": "shimano",
+					"produtoId": "1"
+				},
+				{
+					"id": "2",
+					"nome": "sram",
+					"produtoId": "1"
+				},
+				{
+					"id": "3",
+					"nome": "campagnolo",
+					"produtoId": "1"
+				},
+				' transmissões de carro
+				{
+					"id": "7",
+					"nome": "manual",
+					"produtoId": "3"
+				},
+				{
+					"id": "8",
+					"nome": "automática",
+					"produtoId": "3"
+				},
+				{
+					"id": "9",
+					"nome": "semi-automática",
+					"produtoId": "3"
+				}
+			]
+		},
+		{
+			"id": "5",
+			"nome": "número de marchas",
+			"produtoIds": ["1"],
+			"número de marchas": [
+				{
+					"id": "1",
+					"nome": "21",
+					"produtoId": "1"
+				},
+				{
+					"id": "2",
+					"nome": "24",
+					"produtoId": "1"
+				},
+				{
+					"id": "3",
+					"nome": "27",
+					"produtoId": "1"
+				}
+			]
+		},
+		{
+			"id": "6",
+			"nome": "quadro",
+			"produtoIds": ["1"],
+			"quadros": [
+				{
+					"id": "1",
+					"nome": "alumínio"
+				},
+				{
+					"id": "2",
+					"nome": "carbono"
+				},
+				{
+					"id": "3",
+					"nome": "aço"
+				}
+			],
+			"produtoId": "1"
+		},
+		{
+			"id": "7",
+			"nome": "adesivo",
+			"adesivo": [true, false],
+			"personalização": {
+				"texto": "um texto"
+			},
+			"quantidade": 1,
+			"produtoId": "1"
+		}
+	]
+}
+
+
+@endjson
